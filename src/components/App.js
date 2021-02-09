@@ -5,7 +5,7 @@ class App extends Component {
     constructor(props) {
 	super(props);
 	    this.state={
-	    text:""}
+	    text:"",
 	};
     handlePara=()={
     this.setState({text:"Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"})
