@@ -2,17 +2,26 @@ import React, {Component, useState} from "react";
 import '../styles/App.css';
 
 function App() {
-  const [para,setPara]=useState("");
-  const handleButton=()=>{
-    setPara(" Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy");
-  }
+  const [booli, setbooli] = useState(false);
+  const handleButton = () => {
+    setbooli(true);
+  };
   return (
     <div id="main">
-      {para && <p id="para">{para}</p>}
-      <button id="click" onClick={handleButton}>button</button>
+      {booli === false ? (
+        <button id="click" onClick={handleButton}>
+          button
+        </button>
+      ) : (
+        <p id="para">
+          {
+            "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"
+          }
+        </p>
+      )}
     </div>
   );
 }
 
-
 export default App;
+
