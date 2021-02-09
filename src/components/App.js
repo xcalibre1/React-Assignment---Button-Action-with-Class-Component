@@ -6,12 +6,13 @@ class App extends Component {
 	super(props);
 	    this.state={
 	    text:"",
-	};
-    handlePara=()={
-    this.setState({text:"Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"})
+  };
+}
+    handlePara=()=>{
+    this.setState({text:"Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"});
     }
     render() {
-    	return(
+    	return (
     		<div id="main">
 				{ /* Do not remove this main div!! */ }
 		<p id="para">{this.state.text}</p>
@@ -23,4 +24,3 @@ class App extends Component {
 
 
 export default App;
-
