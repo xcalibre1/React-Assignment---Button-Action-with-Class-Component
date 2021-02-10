@@ -10,7 +10,7 @@ function App() {
     if (para) {
       return (
         <p id="para">
-          {"Hello, I've learnt to use the full-stack evaluation tool. This makesme so happy"}
+          {"Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"}
         </p>
       );
     } else {
